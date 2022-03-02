@@ -1,3 +1,71 @@
-body {
-  background: peachpuff;
+* {
+  border: 1px solid rebeccapurple;
 }
+
+body {
+  background: papayawhip;
+  font-size: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+main {
+  width: 60%;
+  flex-flow: row wrap;
+  justify-self: space-between;
+ 
+}
+
+aside {
+  width: 30%;
+
+}
+
+.card {
+  margin: 10px 0;
+  background-color: skyblue;
+  height: 250px;
+  width: 30%;
+  justify-content: space-between;
+ }
+
+ .a {
+  height: 150px;
+  background-color: seagreen;
+  width: 100%;
+ }
+
+.h {
+  height: 95%;
+  width: 100%;
+  margin: 10px 0;
+  background-color: rebeccapurple;
+ }
+
+ @media (max-width: 900px) {
+  main, aside {
+    width: 100%;
+  }
+
+  aside {
+    height: 300px;
+  }
+ }

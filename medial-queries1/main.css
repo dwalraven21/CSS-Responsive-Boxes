@@ -1,3 +1,46 @@
+* {
+  border: 1px solid rebeccapurple;
+}
+
 body {
   background: blanchedalmond;
+  font-size: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.a, .b, .c {
+ margin: 10px;
+}
+
+.a {
+ height: 150px;
+ background-color: seagreen;
+ width: 95%;
+}
+
+.b {
+ background-color: skyblue;
+ height: 150px;
+ width: 60%;
+}
+
+.c {
+  background-color: springgreen;
+  height: 150px;
+  width: 30%;
+}
+
+
+@media (max-width: 900px) {
+  .b, .c {
+    width: 95%;
+  }
 }
